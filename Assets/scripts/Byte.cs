@@ -41,9 +41,12 @@ public class Byte : MonoBehaviour {
     }
     public char get_char_value()
     {
+        add_random_damage();
         return char_value;
     }
-
+    private void add_random_damage() {
+        // to do - add random damage to all the bits
+    }
     public void set_byte_value(byte byte_value) {
         this.byte_value = byte_value;
         for (int i = 0; i < 8; i++) {

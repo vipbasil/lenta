@@ -74,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Display.cs" />
     <Compile Include="Assets\scripts\Bit.cs" />
     <Compile Include="Assets\scripts\Byte.cs" />
     <Compile Include="Assets\scripts\Reader.cs" />

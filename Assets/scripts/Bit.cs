@@ -11,6 +11,7 @@ public class Bit : MonoBehaviour {
 	void Start () {
         HP = 100;
 	}
+
 	
 	// Update is called once per frame
 	void Update () {

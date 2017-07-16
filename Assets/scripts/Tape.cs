@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class Tape : MonoBehaviour {
     
@@ -21,11 +22,19 @@ public class Tape : MonoBehaviour {
 
 	
 	}
+
+    internal void load_tape(Vector3 vector3)
+    {
+        gameObject.transform.position = vector3;
+    }
+
     public int get_tape_length() {
         return this.Chars.Length;
     }
 
     public char get_char_at(int position) {
+        
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x - 16/50f, gameObject.transform.position.y);
         return Bytes[position].GetComponent<Byte>().get_char_value();
     }
     // Update is called once per frame
